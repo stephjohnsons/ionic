@@ -3,23 +3,33 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet/less" type="text/css" href="styles.less" />
+   <!--Script for SCSS-->
+   <script src="less.js" type="text/javascript"></script>
+   <title> Ionic </title>
 </head>
 <body>
    <nav>
-      Ionic
-
-      <Nav>
-         <Nav.Link href="#" className={styles.navitems}>Buy</Nav.Link>
-         <Nav.Link href="#" className={styles.navitems}>Markets</Nav.Link>
-         <Nav.Link href="#" className={styles.navitems}>Trade</Nav.Link>
-         <Nav.Link href="#" className={styles.navitems}>Derivatives</Nav.Link>
-       </Nav>
- 
-       <Nav className={styles.navright}>
-         <Nav.Link href="#" className={styles.navitems}>Login</Nav.Link>
-         <Button href="#"> Register </Button>
-       </Nav>
+      <div class="brand">
+        Ionic
+      </div>
+    
+      <div class="navbar">
+         <ul class="left-nav">
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Markets</a></li>
+            <li><a href="#">Trade</a></li>
+            <li><a href="#">Derivatives</a></li>
+          </ul>
+        
+          <ul class="right-nav">
+            <li><a href="#">Login</a></li>  
+            <li>
+                <button>Register</button> 
+            </li>
+         </ul>
+      </div>
    </nav>
 
    <div class="hero">
