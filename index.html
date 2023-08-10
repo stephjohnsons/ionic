@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <nav>
+      Ionic
+
+      <Nav>
+         <Nav.Link href="#" className={styles.navitems}>Buy</Nav.Link>
+         <Nav.Link href="#" className={styles.navitems}>Markets</Nav.Link>
+         <Nav.Link href="#" className={styles.navitems}>Trade</Nav.Link>
+         <Nav.Link href="#" className={styles.navitems}>Derivatives</Nav.Link>
+       </Nav>
+ 
+       <Nav className={styles.navright}>
+         <Nav.Link href="#" className={styles.navitems}>Login</Nav.Link>
+         <Button href="#"> Register </Button>
+       </Nav>
+   </nav>
+
+   <div class="hero">
+      <h1>A New Era of Currency Exchange</h1>
+ 
+       <p>
+         The world&apos;s leading brokerage, trusted by the largest financial- and 
+         crypto institutions, now in the palm of your hands.
+       </p>
+ 
+       <button>Get Started</button>
+   </div>
+
+   <main className="grid">
+      <section className="col-2">
+         <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src='/shield.png' />
+            <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+               <div>
+                  {stars.map(star => {
+                  return <FaStar key={star} />
+                  })}
+               </div>
+            <Card.Text>
+               Ionic supports strict sign-in protocols using two-factor authentication.
+            </Card.Text>
+            </Card.Body>
+         </Card>
+      </section>
+      
+      <section className="col-6">
+         <Table striped bordered hover>
+            <thead>
+               <tr>
+               <th>Name</th>
+               <th>Last Price</th>
+               <th>24h Change</th>
+               <th>Market Cap</th>
+               </tr>
+            </thead>
+      
+            <tbody>
+               {data.map(item => (
+                  <tr key={item.name}>
+                     <td>{item.name}</td>
+                     <td>{item.lastPrice}</td>
+                     <td>{item.change}</td>
+                     <td>{item.marketCap}</td>
+                  </tr>
+               ))}
+            </tbody>
+         </Table>
+      </section>
+      
+      <section className="col-4">
+         <div className="card">
+            <Form>
+               <InputGroup className="input-group">
+                  <Form.Control placeholder="Send" />
+                  <InputGroup.Text>USD</InputGroup.Text>
+               </InputGroup>
+               
+               <div className="exchange-icon">
+                  <TfiExchangeVertical />  
+               </div>
+            
+               <InputGroup className="input-group">
+                  <Form.Control placeholder="Get" />
+                  <InputGroup.Text>EUR</InputGroup.Text>
+               </InputGroup>
+            </Form>
+            
+            <p className="text-muted">
+               Read 
+               <Link href="/#">
+                  Terms & Conditions.
+               </Link> 
+               There will be a standard 1.5% transaction fee for each exchange.
+            </p>
+            
+            <Button variant="outline-primary">Change</Button>
+            </div>
+      </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+   {
+     "name": "SGD", 
+     "lastPrice": "3.10",
+     "change": "-0.5%",
+     "marketCap": "174B"
+   },
+   {
+     "name": "IDR",
+     "lastPrice": "3304", 
+     "change": "+1.2%",
+     "marketCap": "123B"
+   },
+   {
+     "name": "USD",
+     "lastPrice": "4.18",
+     "change": "+0.1%",
+     "marketCap": "901B"
+   },
+   {
+     "name": "EUR",
+     "lastPrice": "4.55",
+     "change": "-0.7%", 
+     "marketCap": "884B"
+   },
+   {
+     "name": "AUD",
+     "lastPrice": "2.94",
+     "change": "-0.4%",
+     "marketCap": "123B" 
+   }
+ ]
