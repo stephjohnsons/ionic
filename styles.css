@@ -1,0 +1,15 @@
+/* Document colours */
+/* Buttons */
+button {
+  background-color: #f2f3f5;
+}
+
+/* Navbar */
+nav > ul {
+  list-style: none;
+}
+
+.navbar {
+  display: inline-flex;
+  flex-direction: flex;
+}/*# sourceMappingURL=styles.css.map */

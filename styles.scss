@@ -1,3 +1,18 @@
+/* Document colours */
+$background: #f2f3f5;
+$foreground: #010204;
+$highlight: #738b8e;
+
+/* Page */
+html {
+   background-color: $background;
+}
+
+/* Buttons */
+button {
+   background-color: $highlight;
+}
+
 /* Navbar */
 nav > ul {
    list-style: none;
