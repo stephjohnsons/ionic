@@ -1,7 +1,11 @@
 /* Document colours */
-$background: #f2f3f5;
-$foreground: #010204;
-$highlight: #738b8e;
+:root {
+   $background: #f2f3f5;
+   $foreground: #010204;
+   $highlight: #738b8e;
+
+   
+}
 
 /* Page */
 html {
