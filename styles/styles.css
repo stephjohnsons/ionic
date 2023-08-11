@@ -6,6 +6,8 @@
    --grey: #a2a3a5;
    --foreground: #010204;
    --highlight: #738b8e;
+   --feature-circle-size-1: 150px;
+   --feature-circle-size-2: 100px;
 }
 
 /* Overlapping Avatar */
@@ -25,6 +27,26 @@
 .avatar {
   margin-left: -18px;
   border: solid 2.2px #f2f3f5;
+}
+
+.feature-circle-1 {
+  width: var(--feature-circle-size-1);
+  height: var(--feature-circle-size-1);
+  background-color: #91a2a4;
+  border-radius: 50%;
+}
+
+.feature-circle-2 {
+  width: var(--feature-circle-size-2);
+  height: var(--feature-circle-size-2);
+  background-color: #a5b6b8;
+  border-radius: 50%;
+}
+
+.feature-icon {
+  width: 3em;
+  height: 3em;
+  filter: invert(100);
 }
 
 /* Table */
