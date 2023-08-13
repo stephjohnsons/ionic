@@ -57,3 +57,9 @@
 .table > thead {
   display: block;
 }
+
+#exchange-line {
+  background-color: #738b8e;
+  position: relative;
+  width: 100%;
+}

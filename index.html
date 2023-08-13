@@ -60,7 +60,7 @@
 
   <main>
     <!-- Limit the view to centre -->
-    <div class="container py-4">
+    <div class="container">
       <!-- Navbar -->
       <header class="p-3 rounded-3">
         <div class="container">
@@ -195,32 +195,54 @@
         </div>
 
         <div class="col-md-4">
-          <div class="h-100 p-5 text-bg-secondary rounded-5">
-            <h2>Exchange</h2>
-            <form>
+          <div class="h-100 p-4 text-bg-secondary rounded-5">
+            <h3 class="px-1">
+              Exchange
+            </h3>
+            <form class="border-top pt-3 border-secondary">
               <div class="input-group">
-                <input class="form-control" placeholder="Send" />
-                <div class="input-group-text">USD</div>
+                <span class="input-group-text" id="inputGroup-sizing-sm">Send</span>
+                <input class="form-control" placeholder="1,00" />
+                <select class="input-group-text form-select" type="button" data-bs-toggle="dropdown" aria-expanded>
+                  <option value="MYR">MYR</option>
+                  <option>------------</option>
+                  <option value="AUD">AUD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="IDR">IDR</option>
+                  <option value="SGD">SGD</option>
+                  <option value="USD">USD</option>
+                </select>
               </div>
     
               <div class="exchange-icon">
                 <!-- Insert your exchange icon SVG/HTML here -->
               </div>
     
-              <div class="input-group">
-                <input class="form-control" placeholder="Get" />
-                <div class="input-group-text">EUR</div>
+              <div class="input-group mt-1">
+                <span class="input-group-text pe-4" id="inputGroup-sizing-sm">Get</span>
+                <input class="form-control" placeholder="3,23" />
+                <select class="input-group-text form-select" type="button" data-bs-toggle="dropdown" aria-expanded>
+                  <option value="MYR">MYR</option>
+                  <option>------------</option>
+                  <option value="AUD" selected>AUD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="IDR">IDR</option>
+                  <option value="SGD">SGD</option>
+                  <option value="USD">USD</option>
+                </select>
               </div>
             </form>
     
-            <p class="text-white text-">
+            <p class="text-secondary text-center display-small justify-content-center align-content-center m-5 lh-base">
                 Read
                 <a href="/#">
                   Terms & Conditions.
                 </a>
                 There will be a standard 1.5% transaction fee for each exchange.
             </p>
-            <button type="button" class="btn btn-primary">Change</button>
+            <div class="d-grid">
+              <button class="btn btn-primary" type="button">Change</button>
+            </div>
           </div>
         </div>
       </div>
