@@ -353,11 +353,11 @@ sup {
 }
 
 a {
-  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  color: inherit;
   text-decoration: underline;
 }
 a:hover {
-  --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+  color: #a2a3a5;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -477,10 +477,16 @@ select {
 }
 
 select {
-  word-wrap: normal;
+  word-wrap:normal ;
 }
 select:disabled {
   opacity: 1;
+}
+select:focus {
+  border-color: inherit;
+}
+select:active {
+  border-color: inherit;
 }
 
 [list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
@@ -3277,18 +3283,18 @@ textarea.form-control-lg {
 
 .btn-outline-dark {
   --bs-btn-color: #212529;
-  --bs-btn-border-color: #212529;
+  --bs-btn-border-color: #21252900;
   --bs-btn-hover-color: #f2f3f5;
   --bs-btn-hover-bg: #212529;
-  --bs-btn-hover-border-color: #212529;
+  --bs-btn-hover-border-color: #21252900;
   --bs-btn-focus-shadow-rgb: 33, 37, 41;
   --bs-btn-active-color: #f2f3f5;
   --bs-btn-active-bg: #212529;
-  --bs-btn-active-border-color: #212529;
+  --bs-btn-active-border-color: #21252900;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #212529;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #212529;
+  --bs-btn-disabled-border-color: #21252900;
   --bs-gradient: none;
 }
 
@@ -3308,7 +3314,7 @@ textarea.form-control-lg {
   text-decoration: underline;
 }
 .btn-link:focus-visible {
-  color: var(--bs-btn-color);
+  color: inherit;
 }
 .btn-link:hover {
   color: var(--bs-btn-hover-color);

@@ -93,7 +93,7 @@
               </span>
               
               <div class="dropdown ms-3">
-                <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn-secondary btn-outline-secondary dropdown-toggle btn-globe" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi-globe"></i>
                 </button>
                 <ul class="dropdown-menu">
@@ -150,7 +150,7 @@
               crypto institutions, now in the palm of your hands.
             </p>
     
-            <button type="button" class="btn btn-primary">
+            <button type="button" class="btn btn-primary cta-button">
               Get Started
             </button>
           </div>
@@ -159,6 +159,7 @@
       
       <!-- 2nd row -->
       <div class="row align-items-md-stretch">
+        <!-- 2nd row 1st card: Features -->
         <div class="col-md-3">
           <div class="h-100 p-5 text-bg-primary rounded-5 text-center">
             <div class="feature-circle-1 mb-4 m-auto d-flex justify-content-center align-items-center shadow">
@@ -175,6 +176,7 @@
           </div>
         </div>
 
+        <!-- 2nd row 2nd card: Table -->
         <div class="col-md-5">
           <div class="h-100 p-5 bg-body-tertiary rounded-5">
             <table class="table"></table>
@@ -194,10 +196,14 @@
           </div>
         </div>
 
+        <!-- 2nd row 3rd card: Exchange -->
         <div class="col-md-4">
           <div class="h-100 p-4 text-bg-secondary rounded-5">
-            <h3 class="px-1 mb-3" id="exchange-title">
+            <h3 class="px-1 mb-3 d-flex" id="exchange-title">
               Exchange
+              <span class="fs-6 text-secondary mt-2 ms-auto">
+                Login to view balance
+              </span>
             </h3>
             <form class="border-top pt-3 border-secondary">
               <div class="input-group">
@@ -215,9 +221,9 @@
               </div>
     
               <div class="exchange-btn">
-                <button class="exchange-circle m-auto">
+                <button class="btn btn-primary exchange-circle m-auto" type="button">
                   <img 
-                    class="d-flex exchange-icon"
+                    class="d-flex m-auto exchange-icon"
                     src="/img/exchange.png" 
                     alt="exchange-icon">
                 </button>
@@ -246,7 +252,7 @@
                 A standard 1.5% transaction fee/transaction applies.
             </p>
             <div class="d-grid">
-              <button class="btn btn-primary" type="button">Change</button>
+              <button class="btn btn-primary change-button" type="button">Change</button>
             </div>
           </div>
         </div>
