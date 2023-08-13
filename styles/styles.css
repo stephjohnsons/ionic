@@ -58,8 +58,17 @@
   display: block;
 }
 
+/* Exchange card */ 
+#exchange-title {
+  font-weight: 300;
+}
+
 #exchange-line {
   background-color: #738b8e;
   position: relative;
   width: 100%;
+}
+
+input[id=currency-exchange] {
+  padding: 1rem!important;
 }
