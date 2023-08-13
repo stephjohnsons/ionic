@@ -201,9 +201,9 @@
             </h3>
             <form class="border-top pt-3 border-secondary">
               <div class="input-group">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Send</span>
+                <span class="input-group-text text-tertiary fs-7" id="inputGroup-sizing-sm">Send</span>
                 <input class="form-control" id="currency-exchange" placeholder="1,00" />
-                <select class="input-group-text form-select" type="button" data-bs-toggle="dropdown" aria-expanded>
+                <select class="input-group-text form-select fs-5" type="button" data-bs-toggle="dropdown" aria-expanded>
                   <option value="MYR">MYR</option>
                   <option>------------</option>
                   <option value="AUD">AUD</option>
@@ -214,14 +214,19 @@
                 </select>
               </div>
     
-              <div class="exchange-icon">
-                <!-- Insert your exchange icon SVG/HTML here -->
+              <div class="exchange-btn">
+                <button class="exchange-circle m-auto">
+                  <img 
+                    class="d-flex exchange-icon"
+                    src="/img/exchange.png" 
+                    alt="exchange-icon">
+                </button>
               </div>
     
               <div class="input-group mt-1">
-                <span class="input-group-text pe-4" id="inputGroup-sizing-sm">Get</span>
+                <span class="input-group-text pe-4 text-tertiary fs-7" id="inputGroup-sizing-sm">Get</span>
                 <input class="form-control" id="currency-exchange" placeholder="3,23" />
-                <select class="input-group-text form-select" type="button" data-bs-toggle="dropdown" aria-expanded>
+                <select class="input-group-text form-select fs-5" type="button" data-bs-toggle="dropdown" aria-expanded>
                   <option value="MYR">MYR</option>
                   <option>------------</option>
                   <option value="AUD" selected>AUD</option>

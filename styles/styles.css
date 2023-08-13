@@ -59,6 +59,20 @@
 }
 
 /* Exchange card */ 
+.exchange-icon {
+  width: 1em;
+  filter: invert(1);
+}
+
+.exchange-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #a5b6b8;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
 #exchange-title {
   font-weight: 300;
 }
@@ -70,5 +84,13 @@
 }
 
 input[id=currency-exchange] {
-  padding: 1rem!important;
+  padding: 1.1rem!important;
+  font-size: 1.25rem;
+  color: #f2f3f5;
+  background-color: #596061;
+  border: none;
+}
+
+input[id=currency-exchange]::placeholder {
+  color: #8f8f8fe6;
 }
