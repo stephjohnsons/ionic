@@ -196,13 +196,13 @@
 
         <div class="col-md-4">
           <div class="h-100 p-4 text-bg-secondary rounded-5">
-            <h3 class="px-1">
+            <h3 class="px-1 mb-3" id="exchange-title">
               Exchange
             </h3>
             <form class="border-top pt-3 border-secondary">
               <div class="input-group">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Send</span>
-                <input class="form-control" placeholder="1,00" />
+                <input class="form-control" id="currency-exchange" placeholder="1,00" />
                 <select class="input-group-text form-select" type="button" data-bs-toggle="dropdown" aria-expanded>
                   <option value="MYR">MYR</option>
                   <option>------------</option>
@@ -220,7 +220,7 @@
     
               <div class="input-group mt-1">
                 <span class="input-group-text pe-4" id="inputGroup-sizing-sm">Get</span>
-                <input class="form-control" placeholder="3,23" />
+                <input class="form-control" id="currency-exchange" placeholder="3,23" />
                 <select class="input-group-text form-select" type="button" data-bs-toggle="dropdown" aria-expanded>
                   <option value="MYR">MYR</option>
                   <option>------------</option>
@@ -233,12 +233,12 @@
               </div>
             </form>
     
-            <p class="text-secondary text-center display-small justify-content-center align-content-center m-5 lh-base">
+            <p class="text-secondary text-center display-small justify-content-center align-content-center mx-4 mt-3 mb-5 lh-base">
                 Read
                 <a href="/#">
                   Terms & Conditions.
                 </a>
-                There will be a standard 1.5% transaction fee for each exchange.
+                A standard 1.5% transaction fee/transaction applies.
             </p>
             <div class="d-grid">
               <button class="btn btn-primary" type="button">Change</button>
