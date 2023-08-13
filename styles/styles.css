@@ -66,8 +66,8 @@
 }
 
 /* Table */
-.table {
-  background-color: #fff;
+table .table {
+  background-color: #fff !important;
 }
 
 .table > thead {
