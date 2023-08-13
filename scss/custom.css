@@ -442,9 +442,23 @@ th {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
+  text-align: center;
 }
 tbody {
   margin: 2em 2em;
+  background-color: #f2f3f5;
+}
+tr th {
+  font-size: 0.75em;
+  font-weight: 400;
+  background-color: #a2a3a5;
+  z-index: -99;
+}
+tr:first-child th:first-child {
+  border-top-left-radius: 2em;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 2em;
 }
 
 label {
@@ -1893,9 +1907,10 @@ progress {
   margin-bottom: 1rem;
   vertical-align: top;
   border-color: var(--bs-table-border-color);
+  width: 100%;
 }
 .table > :not(caption) > * > * {
-  padding: 0.5rem 0.5rem;
+  padding: 1.2rem 0.8rem;
   color: var(--bs-table-color-state, var(--bs-table-color-type, var(--bs-table-color)));
   background-color: var(--bs-table-bg);
   border-bottom-width: var(--bs-border-width);
@@ -8949,6 +8964,10 @@ textarea.form-control-lg {
 
 .rounded-5 {
   border-radius: var(--bs-border-radius-xxl) !important;
+}
+
+.rounded-6 {
+  border-radius: 15em !important; 
 }
 
 .rounded-circle {
